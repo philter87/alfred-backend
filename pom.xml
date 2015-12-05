@@ -12,9 +12,20 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
   </properties>
 
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.3.0.RELEASE</version>
+  </parent>
+
   <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -22,4 +33,27 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+  <repositories>
+    <repository>
+      <id>spring-releases</id>
+      <url>https://repo.spring.io/libs-release</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>spring-releases</id>
+      <url>https://repo.spring.io/libs-release</url>
+    </pluginRepository>
+  </pluginRepositories>
+
 </project>
