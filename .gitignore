@@ -1,3 +1,6 @@
 .idea
 alfred.iml
 /target/*
+*.wav
+.settings
+

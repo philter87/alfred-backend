@@ -22,5 +22,4 @@ public class Configuration {
         return speechToText;
     }
 
-
 }
