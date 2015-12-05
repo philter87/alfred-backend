@@ -9,7 +9,7 @@ import java.nio.charset.Charset;
  * Created by phili on 05-12-2015.
  */
 public class HeaderUtils {
-    public static HttpHeaders createHeader(String username,String password){
+    public static HttpHeaders createHeader(final String username,final String password){
         return new HttpHeaders(){
             {
                 String auth = username + ":" + password;
