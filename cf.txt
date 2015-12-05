@@ -1,0 +1,3 @@
+
+cf login 
+cf push alfred -p iShopper-1.0-SNAPSHOT.jar -b https://github.com/cloudfoundry/java-buildpack.git
