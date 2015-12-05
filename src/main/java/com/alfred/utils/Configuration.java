@@ -18,8 +18,7 @@ public class Configuration {
     @Bean
     public SpeechToText getSpeechToText(){
         SpeechToText speechToText = new SpeechToText();
-        speechToText.setUsernameAndPassword("","");
+        speechToText.setUsernameAndPassword("5886b97e-bb0a-4912-9157-440a35132062", "ifdMXMXhxFt8");
         return speechToText;
     }
-
 }

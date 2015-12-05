@@ -1,0 +1,9 @@
+---
+applications:
+- name: alfred
+  path: target/iShopper-1.0-SNAPSHOT.jar
+  memory: 1024M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  host: alfred
+  domain: eu-gb.mybluemix.net
